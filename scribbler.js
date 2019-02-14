@@ -16,19 +16,20 @@ function loadTop() {
   document.getElementsByClassName('top-posts-console')[0].innerHTML = '';
   if (document.getElementsByClassName('top-posts-console').length > 0) {
     var i = 0;
-    var txt = `devto
-  
+    var txt = `devto`
+
+    var body = `
             ? 📚 Here are your posts:
-            >  1) git-history
-              2) I Quit My Software Project To Get Healthy!
-              3) Advanced array manipulation in JavaScript 🧐
-              4) #amaI'm Danny de Vries, Web development lecturer at the Amsterdam University, Ask Me Anything!
-              5) Useful CSS Media Query Features
-              6) I Promise this is a practical guide to Async / Await
+            ❯ 13 Reasons Why Selenium WebDriver Should Be Your First Choice for Automation Testing!
+              &nbsp; Imposter Syndrome in Diagrams
+              &nbsp; What does full stack engineering mean to you?
+              &nbsp; Performance Testing Elasticsearch
+              &nbsp; Dev.to Review #15: Top 7 Of The Week, Discussed
+              &nbsp; How To Setup Nginx For HLS Video Streaming On Centos 7
+              &nbsp; The Books That Made All The Difference To Me As A Developer
             (Move up and down to reveal more choices)
-              Answer:
               `;
-    var speed = 10;
+    var speed = 50;
 
     function typeItOut() {
       if (i < txt.length) {
@@ -39,6 +40,10 @@ function loadTop() {
     }
 
     setTimeout(typeItOut, 300);
+
+    setTimeout(() => {
+      document.getElementsByClassName('top-posts-console')[0].innerHTML += body;
+    }, 1000);
   }
 }
 
@@ -46,17 +51,17 @@ function loadLatest() {
   document.getElementsByClassName('latest-posts-console')[0].innerHTML = '';
   if (document.getElementsByClassName('latest-posts-console').length > 0) {
     var i = 0;
-    var txt = `devto latest
-  
+    var txt = `devto latest`
+    var body = `
             ? 📚 Here are your posts:
-            >  1) git-history
-              2) I Quit My Software Project To Get Healthy!
-              3) Advanced array manipulation in JavaScript 🧐
-              4) #amaI'm Danny de Vries, Web development lecturer at the Amsterdam University, Ask Me Anything!
-              5) Useful CSS Media Query Features
-              6) I Promise this is a practical guide to Async / Await
+            ❯ Doggy Care AR: Creating an Interactive AR Experience
+              &nbsp; Which one to choose React Native, Flutter or Swift for Mobile App Development?
+              &nbsp; Laravel + VueJS = Laravue - a beautiful dashboard for Laravel
+              &nbsp; A Guide to Using Ruby on Rails Application Templates
+              &nbsp; 🔄 Swap out test data in UI-licious with Datasets!
+              &nbsp; R Language : Connect to SQLite database
+              &nbsp; Announcing RSS Feed for LaravelCollections.com
             (Move up and down to reveal more choices)
-              Answer:
               `;
     var speed = 10;
 
@@ -69,6 +74,10 @@ function loadLatest() {
     }
 
     setTimeout(typeItOut, 300);
+
+    setTimeout(() => {
+      document.getElementsByClassName('latest-posts-console')[0].innerHTML += body;
+    }, 1000);
   }
 }
 
@@ -76,17 +85,15 @@ function loadAuthor() {
   document.getElementsByClassName('author-posts-console')[0].innerHTML = '';
   if (document.getElementsByClassName('author-posts-console').length > 0) {
     var i = 0;
-    var txt = `devto author sarthology
-
+    var txt = `devto author sarthology`
+    var body = `
             ? 📚 Here are your posts:
-            >  1) git-history
-              2) I Quit My Software Project To Get Healthy!
-              3) Advanced array manipulation in JavaScript 🧐
-              4) #amaI'm Danny de Vries, Web development lecturer at the Amsterdam University, Ask Me Anything!
-              5) Useful CSS Media Query Features
-              6) I Promise this is a practical guide to Async / Await
+            ❯ How to make Dynamic Text Overlays on Images
+              &nbsp; What's the best source of caffeine for you? 🤔
+              &nbsp; Do we really need a CSS Framework?
+              &nbsp; How to hide your API endpoints while making an electron app?
+              &nbsp; 15 underrated VSCode Themes for a change in 2019 🤷🏻‍♀️
             (Move up and down to reveal more choices)
-              Answer:
               `;
     var speed = 10;
 
@@ -99,6 +106,10 @@ function loadAuthor() {
     }
 
     setTimeout(typeItOut, 300);
+
+    setTimeout(() => {
+      document.getElementsByClassName('author-posts-console')[0].innerHTML += body;
+    }, 1000);
   }
 }
 
@@ -106,17 +117,17 @@ function loadTimeLine() {
   document.getElementsByClassName('timeline-posts-console')[0].innerHTML = '';
   if (document.getElementsByClassName('timeline-posts-console').length > 0) {
     var i = 0;
-    var txt = `devto top week
-
+    var txt = `devto top week`
+    var body = `
             ? 📚 Here are your posts:
-            >  1) git-history
-              2) I Quit My Software Project To Get Healthy!
-              3) Advanced array manipulation in JavaScript 🧐
-              4) #amaI'm Danny de Vries, Web development lecturer at the Amsterdam University, Ask Me Anything!
-              5) Useful CSS Media Query Features
-              6) I Promise this is a practical guide to Async / Await
+            ❯ 21 Platforms That Serve As A Lifeline To Web Developers
+              &nbsp; 20 VS Code Extensions You'll Actually Use
+              &nbsp; A Developers Guide to Getting Fit
+              &nbsp; Boost Your Coding Fu With Visual Studio Code and Vim
+              &nbsp; The Testing Introduction I Wish I Had
+              &nbsp; Code Notes, an open source code snippet manager to increase our productivity! 🚀
+              &nbsp; ES6 Arrow Functions Cheatsheet
             (Move up and down to reveal more choices)
-              Answer:
               `;
     var speed = 10;
 
@@ -129,6 +140,10 @@ function loadTimeLine() {
     }
 
     setTimeout(typeItOut, 300);
+
+    setTimeout(() => {
+      document.getElementsByClassName('timeline-posts-console')[0].innerHTML += body;
+    }, 1000);
   }
 }
 
@@ -136,17 +151,17 @@ function loadTag() {
   document.getElementsByClassName('tag-posts-console')[0].innerHTML = '';
   if (document.getElementsByClassName('tag-posts-console').length > 0) {
     var i = 0;
-    var txt = `devto tag javascript
-
+    var txt = `devto tag javascript`
+    var body = `
             ? 📚 Here are your posts:
-            >  1) git-history
-              2) I Quit My Software Project To Get Healthy!
-              3) Advanced array manipulation in JavaScript 🧐
-              4) #amaI'm Danny de Vries, Web development lecturer at the Amsterdam University, Ask Me Anything!
-              5) Useful CSS Media Query Features
-              6) I Promise this is a practical guide to Async / Await
-            (Move up and down to reveal more choices)
-              Answer:
+            ❯ Outstated - simple hooks-based state management for React
+              &nbsp; Refactoring chronicles
+              &nbsp; Firebase as simple database to React app
+              &nbsp; 9 libraries to kickstart your Web Audio stuff
+              &nbsp; How to Master Manual Testing
+              &nbsp; Building Instagram/Whatsapp stories clone using Web Components 🔥
+              &nbsp; 12-factor Node.js application configuration management without the 'config' npm package
+              (Move up and down to reveal more choices)
               `;
     var speed = 10;
 
@@ -159,6 +174,10 @@ function loadTag() {
     }
 
     setTimeout(typeItOut, 300);
+
+    setTimeout(() => {
+      document.getElementsByClassName('tag-posts-console')[0].innerHTML += body;
+    }, 1000);
   }
 }
 
@@ -166,17 +185,17 @@ function loadKeyword() {
   document.getElementsByClassName('keyword-posts-console')[0].innerHTML = '';
   if (document.getElementsByClassName('keyword-posts-console').length > 0) {
     var i = 0;
-    var txt = `devto search sarthology
-
+    var txt = `devto search sarthology`
+    var body = `
             ? 📚 Here are your posts:
-            >  1) A Repo with list of ⚡️ Super Productive Movie Soundtracks 🎧
-              2) How to make Dynamic Text Overlays on Images
-              3) What's your 🎉New Year Resolutions🎉 ?
-              4) The 10 most popular dev.to posts of 2018
-              5) 🎄🎁 DEV10 🎁🎄: A Christmas Gift for the Best Community on 🌍
-              6) Best Open Source Menubar Apps You Must Have 🤨
+            ❯ A Repo with list of ⚡️ Super Productive Movie Soundtracks 🎧
+              &nbsp; How to make Dynamic Text Overlays on Images
+              &nbsp; What's your 🎉New Year Resolutions🎉 ?
+              &nbsp; The 10 most popular dev.to posts of 2018
+              &nbsp; 🎄🎁 DEV10 🎁🎄: A Christmas Gift for the Best Community on 🌍
+              &nbsp; Best Open Source Menubar Apps You Must Have 🤨
+              &nbsp; Top 5 DEV Comments from the Past Week
             (Move up and down to reveal more choices)
-              Answer:
               `;
     var speed = 10;
 
@@ -189,6 +208,10 @@ function loadKeyword() {
     }
 
     setTimeout(typeItOut, 300);
+
+    setTimeout(() => {
+      document.getElementsByClassName('keyword-posts-console')[0].innerHTML += body;
+    }, 1000);
   }
 }
 
